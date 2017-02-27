@@ -1,0 +1,48 @@
+/* Application CSS Stylesheet */
+
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+	position: static;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+	width: auto;
+}
+
+.glyphicon-lighter {
+	color: darkgray;
+}
+
+
+#stockwatcher-page-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+#stockwatcher-page-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+
+
+/**
+ * Bootstrap CSS Modals.
+ */
+#addStockModal .modal-dialog {
+	z-index: 10000;
+}
+
+

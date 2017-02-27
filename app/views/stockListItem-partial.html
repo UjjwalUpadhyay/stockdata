@@ -1,0 +1,13 @@
+<td>{{ quote.name }}</td>
+<td ng-class="isGain() ? 'text-success' : (isLoss() ? 'text-danger' : '')">{{ quote.new_val | currency }}</td>
+<td ng-class="{ 'text-success': isGain(), 'text-danger': isLoss() }">{{ quote.change | currency }}</td>
+<td ng-class="isGain() ? 'text-success' : (isLoss() ? 'text-danger' : '')">{{ quote.change_precent | percentage:2 }}</td>
+<td>{{quote.last_update | date:'MM/dd/yyyy HH:mm:ss'}}</td>
+
+<!-- <td class="col-md-1" style="padding: 0;">
+	<sparkline-bar class="sparkline-bar" min="{{ quote.liveData._52WeekLow }}" max="{{ quote.liveData._52WeekHigh }}" current="{{ quote.liveData.Price }}"></sparkline-bar>
+</td>
+
+<td class="col-md-1" style="padding: 0;">
+	<sparkline class="sparkline" id="{{ 'sparkline' + quote.yahooSymbol.replace('.', '') }}" symbol="{{ quote.yahooSymbol }}" exchange="{{ quote.liveData.StockExchange }}" yesterday-close-price="{{ quote.liveData.PreviousClose }}"></sparkline>
+</td> -->
